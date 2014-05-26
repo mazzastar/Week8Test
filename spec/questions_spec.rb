@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative './questions'
+require_relative '../lib/questions'
 
 RSpec.configure do |config|
   config.color = true
@@ -220,4 +220,9 @@ describe 'the Friday test :)' do
     n = count_words_of_each_length_in_a_file('lorem.txt') || []
     expect(Hash[n.sort]).to eq({1=>1, 2=>5, 3=>7, 4=>12, 5=>14, 6=>4, 7=>8, 8=>6, 9=>6, 10=>2, 11=>2, 12=>3}) 
   end
+
+  # puts fizzbuzz_without_modulo
+
+   ninety_nine_bottles_of_beer
+  
 end
